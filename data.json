@@ -1,0 +1,56 @@
+{
+    "product": {
+        "id": 6937548554342,
+        "title": "Embrace Sideboard",
+        "description": "<p data-mce-fragment=\"1\">The Embrace Sideboard is a stylish wear. With a top cloth designed to provide superior protection and look great, this storage solution is both functional and attractive. It fits seamlessly into any home decor, with clean lines and a timeless look. Crafted from premium materials for a combination of style, durability, and reliability.</p>",
+        "vendor": "Marmeto",
+        "product_type": "Cloth",
+        "price": "$12999",
+        "compare_at_price": "$19999",
+        "options": [
+            {
+                "name": "Color",
+                "position": 1,
+                "values": [
+                    {
+                        "Yellow": "#ECDECC"
+                    },
+                    {
+                        "Green": "#BBD278"
+                    },
+                    {
+                        "Blue": "#BBC1F8"
+                    },
+                    {
+                        "Pink": "#FFD3F8"
+                    }
+                ]
+            },
+            {
+                "name": "Size",
+                "position": 2,
+                "values": [
+                    "Small",
+                    "Medium",
+                    "Large",
+                    "Extra large",
+                    "XXL"
+                ]
+            }
+        ],
+        "images": [
+            {
+                "src": "https://images.unsplash.com/photo-1598626430994-7514b6981e81"
+            },
+            {
+                "src": "https://images.unsplash.com/photo-1598626430540-588302ca5972"
+            },
+            {
+                "src": "https://images.unsplash.com/photo-1598626431046-c7978e636c14"
+            },
+            {
+                "src": "https://images.unsplash.com/photo-1583846783088-cf6a13d83c2b"
+            }
+        ]
+    }
+}
