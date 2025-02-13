@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Change main image when clicking thumbnails
+    
     const thumbnails = document.querySelectorAll(".thumbnail");
     const mainImage = document.getElementById("main-img");
 
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Quantity selection logic
+    
     let quantity = 1;
     const quantityValue = document.getElementById("quantity-value");
     document.getElementById("increase").addEventListener("click", () => {
@@ -53,3 +53,9 @@ function addToCart() {
         toast.remove();
     }, 3000);
 }
+document.querySelectorAll('.color-box').forEach(box => {
+    box.addEventListener('click', () => {
+        document.querySelectorAll('.color-box').forEach(b => b.classList.remove('selected'));
+        box.classList.add('selected');
+    });
+});

@@ -73,23 +73,46 @@ body {
 color:  rgba(255, 0, 0, 0.5);
     font-weight: normal;
 }
-
+/* Color Options */
 .color-options {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     margin: 10px 0;
+    align-items: center;
 }
 
 .color-box {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 2px solid #ccc;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: 3px solid transparent;
     cursor: pointer;
+    position: relative;
+    transition: 0.3s;
 }
 
+/* Add predefined colors */
+.color-box:nth-child(1) { background-color: #E8DDCC; } /* Beige */
+.color-box:nth-child(2) { background-color: #C4D27A; } /* Green */
+.color-box:nth-child(3) { background-color: #B7B7F3; } /* Blue */
+.color-box:nth-child(4) { background-color: #F6C5E8; } /* Pink */
+
+/* Selected state */
 .color-box.selected {
-    border: 2px solid black;
+    border: 3px solid #DED1BE;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Add checkmark on selection */
+.color-box.selected::after {
+    content: "✔";
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
 }
 
 .size-options label {
@@ -162,4 +185,57 @@ color:  rgba(255, 0, 0, 0.5);
 
 .toast.show {
     opacity: 1;
+}
+
+/* Tablets & Small Laptops  */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .image-gallery, .product-details {
+        width: 100%;
+    }
+
+    .thumbnail-gallery {
+        justify-content: center;
+    }
+
+    .quantity-selector {
+        justify-content: center;
+    }
+
+    .add-to-cart-btn {
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/* Mobile Devices  */
+@media (max-width: 500px) {
+    .color-options {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .color-box {
+        width: 35px;
+        height: 35px;
+    }
+
+    .thumbnail {
+        width: 25%;
+    }
+
+    .price {
+        font-size: 1.3rem;
+    }
+
+    .add-to-cart-btn {
+        width: 100%;
+        padding: 10px;
+    }
 }
